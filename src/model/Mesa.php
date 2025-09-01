@@ -1,0 +1,19 @@
+<?php
+namespace model;
+
+class Mesa extends Entidad{
+    private int $id;
+    private string $nombre;
+    private int $capacidad;
+
+    //TODO CONSTRUCTOR GETTERS SETTERS
+    //TODO AHORA TOMA LO QUE HICISTE EN ENTIDAD Y TRAELO AQUI PARA USARLO EN EL CONSTRUCTOR AQUI, PARA PODER CREAR MESAS DE 
+    //MANERA CONTROLADA.
+    //CONSIDERA UN METODO ABSTRACTO PARA EL MANEJO DEL ID Y DE LA CREACIÓN DE LA ENTIDAD, COMO UN METODO CREAR A PELO QUE TODOS
+    //IMPLEMENTEN.
+
+
+
+}
+
+?>

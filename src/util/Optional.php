@@ -1,7 +1,8 @@
 <?php
-/***
+namespace util;
+/**
  * Clase Optional, que replica la clase Optional de Java
- * @author spachecor
+ * @author Selene
  * @version 1.0
  */
 class Optional{
@@ -15,7 +16,7 @@ class Optional{
         $this->value = $value;
     }
 
-    /***
+    /**
      * Devuelve el valor si está presente, o un valor predeterminado
      * @param $default El valor que devolverá si no contiene valor
      */
@@ -48,6 +49,21 @@ class Optional{
             return $this->value;
         }
         throw new \Exception("Value is not present.");
+    }
+
+    /**
+     * Función que devuelve un optional vacío
+     */
+    public static function empty():Optional{
+        return new Optional();
+    }
+
+    /**
+     * Función que crea un optional del valor que ingresa por argumento
+     * @param $value El valor que rellenará el Optional
+     */
+    public static function of(mixed $value): Optional {
+        return new Optional($value);
     }
 }
 ?>
